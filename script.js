@@ -153,11 +153,11 @@ const getWeather = () => {
                         </div>
                     </div>`;
                 } else if (respuesta.status === 401) {
-                    console.log("Pusiste la llave mal");
+                    console.log("Wrong Key");
                 } else if (respuesta.status === 404) {
-                    console.log("La pelicula que buscas no existe");
+                    console.log("Doesnt Exist");
                 } else {
-                    console.log("Hubo un error y no sabemos que paso");
+                    console.log("Error");
                 }
             });
         }
